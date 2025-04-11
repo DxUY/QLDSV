@@ -1,0 +1,12 @@
+C:\Users\Minh Duy\source\repos\QLDSV\bin\Debug\QLDSV.exe.config
+C:\Users\Minh Duy\source\repos\QLDSV\bin\Debug\QLDSV.exe
+C:\Users\Minh Duy\source\repos\QLDSV\bin\Debug\QLDSV.pdb
+C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.csproj.AssemblyReference.cache
+C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.Properties.Resources.resources
+C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.csproj.GenerateResource.cache
+C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.csproj.CoreCompileInputs.cache
+C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.exe
+C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.pdb
+C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.fe.GiangVien.resources
+C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.fe.Login.resources
+C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.fe.SinhVien.resources
