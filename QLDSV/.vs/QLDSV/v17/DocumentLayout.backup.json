@@ -7,24 +7,24 @@
       "RelativeMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|solutionrelative:fe\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|solutionrelative:fe\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|solutionrelative:fe\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|solutionrelative:fe\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|solutionrelative:fe\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|solutionrelative:fe\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|solutionrelative:fe\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|solutionrelative:fe\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A13C22-7572-4130-B15D-8880D7888997}|QLDSV.csproj|C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,12 +42,12 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "GiangVien.cs",
               "DocumentMoniker": "C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\GiangVien.cs",
               "RelativeDocumentMoniker": "fe\\GiangVien.cs",
-              "ToolTip": "C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\GiangVien.cs*",
-              "RelativeToolTip": "fe\\GiangVien.cs*",
+              "ToolTip": "C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\GiangVien.cs",
+              "RelativeToolTip": "fe\\GiangVien.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAgwBYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T06:41:24.427Z",
@@ -55,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "SinhVien.cs",
               "DocumentMoniker": "C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\SinhVien.cs",
               "RelativeDocumentMoniker": "fe\\SinhVien.cs",
@@ -72,15 +72,15 @@
               "Title": "GiangVien.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\GiangVien.cs",
               "RelativeDocumentMoniker": "fe\\GiangVien.cs",
-              "ToolTip": "C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\GiangVien.cs [Design]*",
-              "RelativeToolTip": "fe\\GiangVien.cs [Design]*",
+              "ToolTip": "C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\GiangVien.cs [Design]",
+              "RelativeToolTip": "fe\\GiangVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T14:29:45.962Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SinhVien.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\SinhVien.cs",
               "RelativeDocumentMoniker": "fe\\SinhVien.cs",
@@ -92,26 +92,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\Login.cs",
               "RelativeDocumentMoniker": "fe\\Login.cs",
               "ToolTip": "C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\Login.cs",
               "RelativeToolTip": "fe\\Login.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T13:50:01.896Z"
+              "WhenOpened": "2025-04-09T13:50:01.896Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\Login.cs",
               "RelativeDocumentMoniker": "fe\\Login.cs",
               "ToolTip": "C:\\Users\\Minh Duy\\source\\repos\\QLDSV\\fe\\Login.cs [Design]",
               "RelativeToolTip": "fe\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T13:34:14.599Z"
+              "WhenOpened": "2025-04-09T13:34:14.599Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",

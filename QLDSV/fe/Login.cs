@@ -1,60 +1,110 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QLDSV.fe
 {
     public partial class Login : Form
     {
-        private int type; // 0 = SV, 1 = GV
+        private int type;
 
         public Login()
         {
             InitializeComponent();
         }
 
+        private void showPass_CheckedChanged(object sender, EventArgs e)
+        {
+            login_password.PasswordChar = showPass.Checked ? '\0' : '*';
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void loginBtn_Click(object sender, EventArgs e)
         {
+            if (login_username.Text == "" || login_password.Text == "")
+            {
+                MessageBox.Show("Please fill all blank fields", "Error Message",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             string username = login_username.Text.Trim();
             string password = login_password.Text.Trim();
-
-            if (DataHelper.Connect(username, password) == 1)
+            
+            if (DataHelper.Connect() == 1)
             {
                 string table = (type == 0) ? "SinhVien" : "GIANGVIEN";
                 string idField = (type == 0) ? "MASV" : "MAGV";
-                string query = $"SELECT * FROM {table} WHERE {idField} = @username";
+                string passField = "PASSWORD"; // ⚠️ Adjust if needed
+                string nameField = "TEN"; // common field name for both tables assumed
+
+                string query = $"SELECT * FROM {table} WHERE {idField} = @username AND {passField} = @password";
 
                 using (SqlCommand cmd = new SqlCommand(query, DataHelper.conn))
                 {
                     cmd.Parameters.AddWithValue("@username", username);
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    try
                     {
-                        if (reader != null && reader.HasRows)
+                        using (SqlDataReader reader = cmd.ExecuteReader())
                         {
-                            reader.Read();
-                            reader.Close();
-                            this.Hide();
-
-                            SqlCommand roleCmd = new SqlCommand("SELECT IS_MEMBER('PGV') AS IS_PGV, IS_MEMBER('KHOA') AS IS_KHOA, IS_MEMBER('SV') AS IS_SV", DataHelper.conn);
-                            SqlDataReader roleReader = roleCmd.ExecuteReader();
-
-                            if (roleReader.Read())
+                            if (reader != null && reader.HasRows)
                             {
-                                bool isPGV = (int)roleReader["IS_PGV"] == 1;
-                                bool isKhoa = (int)roleReader["IS_KHOA"] == 1;
-                                bool isSV = (int)roleReader["IS_SV"] == 1;
-                                roleReader.Close();
+                                reader.Read();
+                                string name = reader[nameField].ToString();
 
-                                if (isPGV) new FormMainPGV().Show();
-                                else if (isKhoa) new FormMainKhoa().Show();
-                                else if (isSV) new FormMainSV(username).Show();
-                                else MessageBox.Show("Tài khoản không thuộc nhóm nào.");
+                                MessageBox.Show($"Welcome, {name}!", "Login Successful",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                reader.Close();
+                                this.Hide();
+
+                                if (type == 0)
+                                    new SinhVien().Show();
+                                else
+                                    new GiangVien().Show();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Invalid username or password.",
+                                    "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
-                        else MessageBox.Show("Sai thông tin đăng nhập.");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred during login:\n" + ex.Message,
+                            "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
+            else
+            {
+                MessageBox.Show("Failed to connect to the database.",
+                    "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void gv_CheckedChanged(object sender, EventArgs e)
+        {
+            type = 1;
+        }
+
+        private void sv_CheckedChanged(object sender, EventArgs e)
+        {
+            type = 0;
         }
     }
 }
