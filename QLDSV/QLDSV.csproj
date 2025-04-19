@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataHelper.cs" />
+    <Compile Include="fe\DSMH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fe\DSMH.Designer.cs">
+      <DependentUpon>DSMH.cs</DependentUpon>
+    </Compile>
     <Compile Include="fe\GiangVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,8 +71,17 @@
     <Compile Include="fe\SinhVien.Designer.cs">
       <DependentUpon>SinhVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="fe\DML.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fe\DML.Designer.cs">
+      <DependentUpon>DML.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fe\DSMH.resx">
+      <DependentUpon>DSMH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fe\GiangVien.resx">
       <DependentUpon>GiangVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +91,9 @@
     <EmbeddedResource Include="fe\SinhVien.resx">
       <DependentUpon>SinhVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fe\DML.resx">
+      <DependentUpon>DML.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -84,6 +102,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -97,6 +116,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-modify-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

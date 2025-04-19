@@ -117,4 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Logout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAIjSURBVFhH1dfJj01REMfxFkOwEBv8B4YddsYYFkIQEhGJ
+        VbPDQuyEFhvEX0AMMcW4QdJ/gOYPMNsbV6wQs48cqjvvVffr97rv69fxTe6mfueee26dOnWqurr+JzAJ
+        a9CDK7iL27iEQ9iAafm9ymABLuIDfuIRenEOp3AND/Edn3EZi/I8IwazcQY/0IduzMrj+sEM7MA9/A4v
+        zcnjWgKL8RpPi2uz3gyswjO8w8qsDws2hSuvYmrWW6XEA87jKzZnfUjiz8vHj2FC1kcDjuMblmetjtjz
+        4vby5235eD+4gDfZXkcEXNnzth8lTMaSbB8A8yLa12etI8Q578v2qmAP9md7HZHhSpLpzlpVsCU825O1
+        AbA2MlzDJFMFbItFHMnaX4pQ0mu2txNsb+iJuEx6s73dNFxE3Gpn64xNwFHcGsXzyj/21U42HgvYWztZ
+        p7fgcBZKgdGpIKz/eIir8WvUd3cTao7h4BNQiET0HruyVhVsbfjntcRtdT/bq1KCDQeyfRCYGzXdxqx1
+        DJzG8zG6jqdgabbXEQXJS1wfg4Kk3LbDFySFUk7jE060axE4GXXhsqwNSYmDWMQNTM96q0RRWoL7y4hj
+        KzxRtuNFqZKz3ozooMq7b7Ei6y1R6oPofMo5foDdJU7yuH4wEztjbGlMSopvOL5lMD9cWZJVyZhPUmt2
+        E4/jGH+MgFuY56kMJkbHUxrR0v/diea0LO4g1lVpZMaFP9cGQ1Jn3Qn3AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>202, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>

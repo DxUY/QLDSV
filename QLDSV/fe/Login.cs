@@ -13,86 +13,75 @@ namespace QLDSV.fe
 {
     public partial class Login : Form
     {
-        private int type;
+        private int type; // 0 = SV, 1 = GV
 
         public Login()
         {
             InitializeComponent();
         }
 
-        private void showPass_CheckedChanged(object sender, EventArgs e)
-        {
-            login_password.PasswordChar = showPass.Checked ? '\0' : '*';
-        }
-
-        private void exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            if (login_username.Text == "" || login_password.Text == "")
+            if (login_username.Text == "" || (type == 0 && login_password.Text == ""))
             {
-                MessageBox.Show("Please fill all blank fields", "Error Message",
+                MessageBox.Show("Please fill all fields", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             string username = login_username.Text.Trim();
             string password = login_password.Text.Trim();
-            
-            if (DataHelper.Connect() == 1)
+
+            if (DataHelper.Connect(login_username.Text.Trim(), login_password.Text.Trim()) == 1)
             {
                 string table = (type == 0) ? "SinhVien" : "GIANGVIEN";
                 string idField = (type == 0) ? "MASV" : "MAGV";
-                string passField = "PASSWORD"; // ⚠️ Adjust if needed
-                string nameField = "TEN"; // common field name for both tables assumed
 
-                string query = $"SELECT * FROM {table} WHERE {idField} = @username AND {passField} = @password";
+                string query = $"SELECT * FROM {table} WHERE {idField} = @username";
 
                 using (SqlCommand cmd = new SqlCommand(query, DataHelper.conn))
                 {
                     cmd.Parameters.AddWithValue("@username", username);
-                    cmd.Parameters.AddWithValue("@password", password);
 
                     try
                     {
                         using (SqlDataReader reader = cmd.ExecuteReader())
                         {
-                            if (reader != null && reader.HasRows)
+                            if (reader.HasRows)
                             {
                                 reader.Read();
-                                string name = reader[nameField].ToString();
-
-                                MessageBox.Show($"Welcome, {name}!", "Login Successful",
-                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                                 reader.Close();
                                 this.Hide();
 
                                 if (type == 0)
-                                    new SinhVien().Show();
+                                {
+                                    SinhVien formSV = new SinhVien();
+                                    formSV.FormClosed += (s, args) => this.Close();
+                                    formSV.Show();
+                                }
                                 else
-                                    new GiangVien().Show();
+                                {
+                                    GiangVien formGV = new GiangVien();
+                                    formGV.FormClosed += (s, args) => this.Close();
+                                    formGV.Show();
+                                }
                             }
                             else
                             {
-                                MessageBox.Show("Invalid username or password.",
-                                    "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Invalid username or role.", "Login Failed",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("An error occurred during login:\n" + ex.Message,
-                            "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error: " + ex.Message);
                     }
                 }
             }
             else
             {
-                MessageBox.Show("Failed to connect to the database.",
+                MessageBox.Show("Cannot connect to DB. Check server or credentials.",
                     "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -100,11 +89,34 @@ namespace QLDSV.fe
         private void gv_CheckedChanged(object sender, EventArgs e)
         {
             type = 1;
+            label3.Visible = true;
+            login_password.Visible = true;
+            showPass.Visible = true;
         }
 
         private void sv_CheckedChanged(object sender, EventArgs e)
         {
             type = 0;
+            label3.Visible = true;
+            login_password.Visible = true;
+            showPass.Visible = true;
         }
+
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void showPass_CheckedChanged(object sender, EventArgs e)
+        {
+            login_password.PasswordChar = showPass.Checked ? '\0' : '*';
+        }
+
     }
 }

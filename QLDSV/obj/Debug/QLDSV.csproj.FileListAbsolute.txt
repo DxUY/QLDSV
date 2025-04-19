@@ -10,3 +10,4 @@ C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.pdb
 C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.fe.GiangVien.resources
 C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.fe.Login.resources
 C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.fe.SinhVien.resources
+C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.fe.DML.resources

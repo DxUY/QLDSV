@@ -21,5 +21,23 @@ namespace QLDSV.fe
         {
             Application.Exit();
         }
+
+        private void DML_Click(object sender, EventArgs e)
+        {
+            dml1.Visible = true;
+        }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            DialogResult check = MessageBox.Show("Are you sure you want to logout?",
+                "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (check == DialogResult.Yes)
+            {
+                Login loginForm = new Login();
+                loginForm.Show();
+                this.Hide();
+            }
+        }
     }
 }

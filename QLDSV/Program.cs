@@ -17,7 +17,6 @@ namespace QLDSV
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new fe.Login());
-            DataHelper.Connect();
         }
     }
 }

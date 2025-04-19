@@ -39,6 +39,7 @@
             // 
             this.exit.BackColor = System.Drawing.Color.Indigo;
             this.exit.FlatAppearance.BorderSize = 0;
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit.ForeColor = System.Drawing.Color.White;
             this.exit.Location = new System.Drawing.Point(1143, 9);
             this.exit.Name = "exit";

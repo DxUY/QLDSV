@@ -167,6 +167,8 @@
             // 
             // exit
             // 
+            this.exit.FlatAppearance.BorderSize = 0;
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit.Location = new System.Drawing.Point(715, 9);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(32, 31);
