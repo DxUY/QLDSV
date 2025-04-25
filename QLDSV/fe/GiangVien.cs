@@ -25,6 +25,9 @@ namespace QLDSV.fe
         private void DML_Click(object sender, EventArgs e)
         {
             dml1.Visible = true;
+            dsmh1.Visible = false;
+            dsltc1.Visible = false;
+            nd1.Visible = false;
         }
 
         private void Logout_Click(object sender, EventArgs e)
@@ -38,6 +41,30 @@ namespace QLDSV.fe
                 loginForm.Show();
                 this.Hide();
             }
+        }
+
+        private void DSMH_Click(object sender, EventArgs e)
+        {
+            dml1.Visible = false;
+            dsmh1.Visible = true;
+            dsltc1.Visible = false;
+            nd1.Visible = false;
+        }
+
+        private void DSLTC_Click(object sender, EventArgs e)
+        {
+            dml1.Visible = false;
+            dsmh1.Visible = false;
+            dsltc1.Visible = true;
+            nd1.Visible = false;
+        }
+
+        private void ND_Click(object sender, EventArgs e)
+        {
+            dml1.Visible = false;
+            dsmh1.Visible = false;
+            dsltc1.Visible = false;
+            nd1.Visible = true;
         }
     }
 }

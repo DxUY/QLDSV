@@ -136,7 +136,6 @@
             // 
             // login_username
             // 
-            this.login_username.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.login_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.login_username.Location = new System.Drawing.Point(234, 149);
             this.login_username.Name = "login_username";
@@ -145,7 +144,6 @@
             // 
             // login_password
             // 
-            this.login_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.login_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.login_password.Location = new System.Drawing.Point(234, 245);
             this.login_password.Name = "login_password";

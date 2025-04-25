@@ -37,17 +37,18 @@
             this.DSMH = new System.Windows.Forms.Button();
             this.ND = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Logout = new System.Windows.Forms.Button();
             this.DSLTC = new System.Windows.Forms.Button();
             this.role = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.dsltc1 = new QLDSV.fe.DSLTC();
+            this.dsmh1 = new QLDSV.fe.DSMH();
             this.dml1 = new QLDSV.fe.DML();
-            this.space = new System.Windows.Forms.Panel();
-            this.Logout = new System.Windows.Forms.Button();
+            this.nd1 = new QLDSV.fe.ND();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.space.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,7 +59,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1338, 55);
+            this.panel1.Size = new System.Drawing.Size(1510, 55);
             this.panel1.TabIndex = 1;
             // 
             // exit
@@ -67,7 +68,7 @@
             this.exit.FlatAppearance.BorderSize = 0;
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit.ForeColor = System.Drawing.Color.White;
-            this.exit.Location = new System.Drawing.Point(1301, 7);
+            this.exit.Location = new System.Drawing.Point(1473, 10);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(34, 39);
             this.exit.TabIndex = 3;
@@ -94,7 +95,7 @@
             this.DML.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DML.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.DML.ForeColor = System.Drawing.Color.White;
-            this.DML.Location = new System.Drawing.Point(-3, 187);
+            this.DML.Location = new System.Drawing.Point(0, 330);
             this.DML.Name = "DML";
             this.DML.Size = new System.Drawing.Size(250, 52);
             this.DML.TabIndex = 0;
@@ -110,12 +111,13 @@
             this.DSMH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DSMH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.DSMH.ForeColor = System.Drawing.Color.White;
-            this.DSMH.Location = new System.Drawing.Point(-3, 245);
+            this.DSMH.Location = new System.Drawing.Point(0, 388);
             this.DSMH.Name = "DSMH";
             this.DSMH.Size = new System.Drawing.Size(253, 52);
             this.DSMH.TabIndex = 2;
             this.DSMH.Text = "Danh sách môn học";
             this.DSMH.UseVisualStyleBackColor = true;
+            this.DSMH.Click += new System.EventHandler(this.DSMH_Click);
             // 
             // ND
             // 
@@ -125,12 +127,13 @@
             this.ND.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ND.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.ND.ForeColor = System.Drawing.Color.White;
-            this.ND.Location = new System.Drawing.Point(0, 361);
+            this.ND.Location = new System.Drawing.Point(-3, 504);
             this.ND.Name = "ND";
             this.ND.Size = new System.Drawing.Size(253, 52);
             this.ND.TabIndex = 3;
             this.ND.Text = "Nhập điểm";
             this.ND.UseVisualStyleBackColor = true;
+            this.ND.Click += new System.EventHandler(this.ND_Click);
             // 
             // panel2
             // 
@@ -145,8 +148,26 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 55);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(253, 714);
+            this.panel2.Size = new System.Drawing.Size(253, 884);
             this.panel2.TabIndex = 2;
+            // 
+            // Logout
+            // 
+            this.Logout.FlatAppearance.BorderSize = 0;
+            this.Logout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
+            this.Logout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
+            this.Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Logout.ForeColor = System.Drawing.Color.White;
+            this.Logout.Image = ((System.Drawing.Image)(resources.GetObject("Logout.Image")));
+            this.Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Logout.Location = new System.Drawing.Point(50, 829);
+            this.Logout.Name = "Logout";
+            this.Logout.Size = new System.Drawing.Size(164, 52);
+            this.Logout.TabIndex = 7;
+            this.Logout.Text = "Logout";
+            this.Logout.UseVisualStyleBackColor = true;
+            this.Logout.Click += new System.EventHandler(this.Logout_Click);
             // 
             // DSLTC
             // 
@@ -156,19 +177,20 @@
             this.DSLTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DSLTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.DSLTC.ForeColor = System.Drawing.Color.White;
-            this.DSLTC.Location = new System.Drawing.Point(0, 303);
+            this.DSLTC.Location = new System.Drawing.Point(0, 446);
             this.DSLTC.Name = "DSLTC";
             this.DSLTC.Size = new System.Drawing.Size(253, 52);
             this.DSLTC.TabIndex = 6;
             this.DSLTC.Text = "Danh sách lớp tín chỉ";
             this.DSLTC.UseVisualStyleBackColor = true;
+            this.DSLTC.Click += new System.EventHandler(this.DSLTC_Click);
             // 
             // role
             // 
             this.role.AutoSize = true;
             this.role.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.role.ForeColor = System.Drawing.Color.White;
-            this.role.Location = new System.Drawing.Point(53, 74);
+            this.role.Location = new System.Drawing.Point(56, 115);
             this.role.Name = "role";
             this.role.Size = new System.Drawing.Size(127, 26);
             this.role.TabIndex = 5;
@@ -179,7 +201,7 @@
             // 
             this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.name.ForeColor = System.Drawing.Color.White;
-            this.name.Location = new System.Drawing.Point(22, 28);
+            this.name.Location = new System.Drawing.Point(22, 66);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(192, 32);
             this.name.TabIndex = 4;
@@ -192,45 +214,43 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // dsltc1
+            // 
+            this.dsltc1.Location = new System.Drawing.Point(253, 55);
+            this.dsltc1.Name = "dsltc1";
+            this.dsltc1.Size = new System.Drawing.Size(1257, 884);
+            this.dsltc1.TabIndex = 5;
+            // 
+            // dsmh1
+            // 
+            this.dsmh1.Location = new System.Drawing.Point(253, 55);
+            this.dsmh1.Name = "dsmh1";
+            this.dsmh1.Size = new System.Drawing.Size(1257, 884);
+            this.dsmh1.TabIndex = 4;
+            // 
             // dml1
             // 
-            this.dml1.Location = new System.Drawing.Point(0, 0);
+            this.dml1.Location = new System.Drawing.Point(253, 58);
             this.dml1.Name = "dml1";
-            this.dml1.Size = new System.Drawing.Size(1085, 711);
-            this.dml1.TabIndex = 0;
+            this.dml1.Size = new System.Drawing.Size(1257, 884);
+            this.dml1.TabIndex = 3;
             // 
-            // space
+            // nd1
             // 
-            this.space.Controls.Add(this.dml1);
-            this.space.Location = new System.Drawing.Point(253, 55);
-            this.space.Name = "space";
-            this.space.Size = new System.Drawing.Size(1085, 714);
-            this.space.TabIndex = 3;
-            // 
-            // Logout
-            // 
-            this.Logout.FlatAppearance.BorderSize = 0;
-            this.Logout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
-            this.Logout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
-            this.Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Logout.ForeColor = System.Drawing.Color.White;
-            this.Logout.Image = ((System.Drawing.Image)(resources.GetObject("Logout.Image")));
-            this.Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Logout.Location = new System.Drawing.Point(50, 659);
-            this.Logout.Name = "Logout";
-            this.Logout.Size = new System.Drawing.Size(164, 52);
-            this.Logout.TabIndex = 7;
-            this.Logout.Text = "Logout";
-            this.Logout.UseVisualStyleBackColor = true;
-            this.Logout.Click += new System.EventHandler(this.Logout_Click);
+            this.nd1.Location = new System.Drawing.Point(253, 55);
+            this.nd1.Name = "nd1";
+            this.nd1.Size = new System.Drawing.Size(1257, 884);
+            this.nd1.TabIndex = 6;
             // 
             // GiangVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1338, 769);
-            this.Controls.Add(this.space);
+            this.ClientSize = new System.Drawing.Size(1510, 939);
+            this.Controls.Add(this.nd1);
+            this.Controls.Add(this.dsltc1);
+            this.Controls.Add(this.dsmh1);
+            this.Controls.Add(this.dml1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -241,7 +261,6 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.space.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -259,8 +278,10 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button DSLTC;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private DML dml1;
-        private System.Windows.Forms.Panel space;
         private System.Windows.Forms.Button Logout;
+        private DML dml1;
+        private DSMH dsmh1;
+        private DSLTC dsltc1;
+        private ND nd1;
     }
 }
