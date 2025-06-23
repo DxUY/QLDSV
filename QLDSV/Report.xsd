@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Report" targetNamespace="http://tempuri.org/Report.xsd" xmlns:mstns="http://tempuri.org/Report.xsd" xmlns="http://tempuri.org/Report.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Report" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Report" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Report">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LopTinChiReportTable" msprop:Generator_RowEvHandlerName="LopTinChiReportTableRowChangeEventHandler" msprop:Generator_RowDeletedName="LopTinChiReportTableRowDeleted" msprop:Generator_RowDeletingName="LopTinChiReportTableRowDeleting" msprop:Generator_RowEvArgName="LopTinChiReportTableRowChangeEvent" msprop:Generator_TablePropName="LopTinChiReportTable" msprop:Generator_RowChangedName="LopTinChiReportTableRowChanged" msprop:Generator_UserTableName="LopTinChiReportTable" msprop:Generator_RowChangingName="LopTinChiReportTableRowChanging" msprop:Generator_RowClassName="LopTinChiReportTableRow" msprop:Generator_TableClassName="LopTinChiReportTableDataTable" msprop:Generator_TableVarName="tableLopTinChiReportTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TENMH" msprop:Generator_ColumnPropNameInTable="TENMHColumn" msprop:Generator_ColumnPropNameInRow="TENMH" msprop:Generator_UserColumnName="TENMH" msprop:Generator_ColumnVarNameInTable="columnTENMH" type="xs:string" minOccurs="0" />
+              <xs:element name="HOTEN" msprop:Generator_ColumnPropNameInTable="HOTENColumn" msprop:Generator_ColumnPropNameInRow="HOTEN" msprop:Generator_UserColumnName="HOTEN" msprop:Generator_ColumnVarNameInTable="columnHOTEN" type="xs:string" minOccurs="0" />
+              <xs:element name="NHOM" msprop:Generator_ColumnPropNameInTable="NHOMColumn" msprop:Generator_ColumnPropNameInRow="NHOM" msprop:Generator_UserColumnName="NHOM" msprop:Generator_ColumnVarNameInTable="columnNHOM" type="xs:string" minOccurs="0" />
+              <xs:element name="SOSVTOITHIEU" msprop:Generator_ColumnPropNameInTable="SOSVTOITHIEUColumn" msprop:Generator_ColumnPropNameInRow="SOSVTOITHIEU" msprop:Generator_UserColumnName="SOSVTOITHIEU" msprop:Generator_ColumnVarNameInTable="columnSOSVTOITHIEU" type="xs:string" minOccurs="0" />
+              <xs:element name="SLDANGKY" msprop:Generator_ColumnPropNameInTable="SLDANGKYColumn" msprop:Generator_ColumnPropNameInRow="SLDANGKY" msprop:Generator_UserColumnName="SLDANGKY" msprop:Generator_ColumnVarNameInTable="columnSLDANGKY" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SVDangKyReportTable" msprop:Generator_RowEvHandlerName="SVDangKyReportTableRowChangeEventHandler" msprop:Generator_RowDeletedName="SVDangKyReportTableRowDeleted" msprop:Generator_RowDeletingName="SVDangKyReportTableRowDeleting" msprop:Generator_RowEvArgName="SVDangKyReportTableRowChangeEvent" msprop:Generator_TablePropName="SVDangKyReportTable" msprop:Generator_RowChangedName="SVDangKyReportTableRowChanged" msprop:Generator_UserTableName="SVDangKyReportTable" msprop:Generator_RowChangingName="SVDangKyReportTableRowChanging" msprop:Generator_RowClassName="SVDangKyReportTableRow" msprop:Generator_TableClassName="SVDangKyReportTableDataTable" msprop:Generator_TableVarName="tableSVDangKyReportTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MASV" msprop:Generator_ColumnPropNameInTable="MASVColumn" msprop:Generator_ColumnPropNameInRow="MASV" msprop:Generator_UserColumnName="MASV" msprop:Generator_ColumnVarNameInTable="columnMASV" type="xs:string" minOccurs="0" />
+              <xs:element name="HO" msprop:Generator_ColumnPropNameInTable="HOColumn" msprop:Generator_ColumnPropNameInRow="HO" msprop:Generator_UserColumnName="HO" msprop:Generator_ColumnVarNameInTable="columnHO" type="xs:string" minOccurs="0" />
+              <xs:element name="TEN" msprop:Generator_ColumnPropNameInTable="TENColumn" msprop:Generator_ColumnPropNameInRow="TEN" msprop:Generator_UserColumnName="TEN" msprop:Generator_ColumnVarNameInTable="columnTEN" type="xs:string" minOccurs="0" />
+              <xs:element name="PHAI" msprop:Generator_ColumnPropNameInTable="PHAIColumn" msprop:Generator_ColumnPropNameInRow="PHAI" msprop:Generator_UserColumnName="PHAI" msprop:Generator_ColumnVarNameInTable="columnPHAI" type="xs:string" minOccurs="0" />
+              <xs:element name="MALOP" msprop:Generator_ColumnPropNameInTable="MALOPColumn" msprop:Generator_ColumnPropNameInRow="MALOP" msprop:Generator_UserColumnName="MALOP" msprop:Generator_ColumnVarNameInTable="columnMALOP" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BDLTCReportTable" msprop:Generator_RowEvHandlerName="BDLTCReportTableRowChangeEventHandler" msprop:Generator_RowDeletedName="BDLTCReportTableRowDeleted" msprop:Generator_RowDeletingName="BDLTCReportTableRowDeleting" msprop:Generator_RowEvArgName="BDLTCReportTableRowChangeEvent" msprop:Generator_TablePropName="BDLTCReportTable" msprop:Generator_RowChangedName="BDLTCReportTableRowChanged" msprop:Generator_UserTableName="BDLTCReportTable" msprop:Generator_RowChangingName="BDLTCReportTableRowChanging" msprop:Generator_RowClassName="BDLTCReportTableRow" msprop:Generator_TableClassName="BDLTCReportTableDataTable" msprop:Generator_TableVarName="tableBDLTCReportTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MASV" msprop:Generator_ColumnPropNameInTable="MASVColumn" msprop:Generator_ColumnPropNameInRow="MASV" msprop:Generator_UserColumnName="MASV" msprop:Generator_ColumnVarNameInTable="columnMASV" type="xs:string" minOccurs="0" />
+              <xs:element name="HO" msprop:Generator_ColumnPropNameInTable="HOColumn" msprop:Generator_ColumnPropNameInRow="HO" msprop:Generator_UserColumnName="HO" msprop:Generator_ColumnVarNameInTable="columnHO" type="xs:string" minOccurs="0" />
+              <xs:element name="TEN" msprop:Generator_ColumnPropNameInTable="TENColumn" msprop:Generator_ColumnPropNameInRow="TEN" msprop:Generator_UserColumnName="TEN" msprop:Generator_ColumnVarNameInTable="columnTEN" type="xs:string" minOccurs="0" />
+              <xs:element name="DIEM_CC" msprop:Generator_ColumnPropNameInTable="DIEM_CCColumn" msprop:Generator_ColumnPropNameInRow="DIEM_CC" msprop:Generator_UserColumnName="DIEM_CC" msprop:Generator_ColumnVarNameInTable="columnDIEM_CC" type="xs:string" minOccurs="0" />
+              <xs:element name="DIEM_GK" msprop:Generator_ColumnPropNameInTable="DIEM_GKColumn" msprop:Generator_ColumnPropNameInRow="DIEM_GK" msprop:Generator_UserColumnName="DIEM_GK" msprop:Generator_ColumnVarNameInTable="columnDIEM_GK" type="xs:string" minOccurs="0" />
+              <xs:element name="DIEM_CK" msprop:Generator_ColumnPropNameInTable="DIEM_CKColumn" msprop:Generator_ColumnPropNameInRow="DIEM_CK" msprop:Generator_UserColumnName="DIEM_CK" msprop:Generator_ColumnVarNameInTable="columnDIEM_CK" type="xs:string" minOccurs="0" />
+              <xs:element name="DIEM_HM" msprop:Generator_ColumnPropNameInTable="DIEM_HMColumn" msprop:Generator_ColumnPropNameInRow="DIEM_HM" msprop:Generator_UserColumnName="DIEM_HM" msprop:Generator_ColumnVarNameInTable="columnDIEM_HM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PDReportTable" msprop:Generator_RowEvHandlerName="PDReportTableRowChangeEventHandler" msprop:Generator_RowDeletedName="PDReportTableRowDeleted" msprop:Generator_RowDeletingName="PDReportTableRowDeleting" msprop:Generator_RowEvArgName="PDReportTableRowChangeEvent" msprop:Generator_TablePropName="PDReportTable" msprop:Generator_RowChangedName="PDReportTableRowChanged" msprop:Generator_UserTableName="PDReportTable" msprop:Generator_RowChangingName="PDReportTableRowChanging" msprop:Generator_RowClassName="PDReportTableRow" msprop:Generator_TableClassName="PDReportTableDataTable" msprop:Generator_TableVarName="tablePDReportTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TENMH" msprop:Generator_ColumnPropNameInTable="TENMHColumn" msprop:Generator_ColumnPropNameInRow="TENMH" msprop:Generator_UserColumnName="TENMH" msprop:Generator_ColumnVarNameInTable="columnTENMH" type="xs:string" minOccurs="0" />
+              <xs:element name="DIEM" msprop:Generator_ColumnPropNameInTable="DIEMColumn" msprop:Generator_ColumnPropNameInRow="DIEM" msprop:Generator_UserColumnName="DIEM" msprop:Generator_ColumnVarNameInTable="columnDIEM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BDTKReportTable" msprop:Generator_RowEvHandlerName="BDTKReportTableRowChangeEventHandler" msprop:Generator_RowDeletedName="BDTKReportTableRowDeleted" msprop:Generator_RowDeletingName="BDTKReportTableRowDeleting" msprop:Generator_RowEvArgName="BDTKReportTableRowChangeEvent" msprop:Generator_TablePropName="BDTKReportTable" msprop:Generator_RowChangedName="BDTKReportTableRowChanged" msprop:Generator_RowChangingName="BDTKReportTableRowChanging" msprop:Generator_TableClassName="BDTKReportTableDataTable" msprop:Generator_RowClassName="BDTKReportTableRow" msprop:Generator_TableVarName="tableBDTKReportTable" msprop:Generator_UserTableName="BDTKReportTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MASV" msprop:Generator_ColumnPropNameInRow="MASV" msprop:Generator_ColumnPropNameInTable="MASVColumn" msprop:Generator_ColumnVarNameInTable="columnMASV" msprop:Generator_UserColumnName="MASV" type="xs:string" minOccurs="0" />
+              <xs:element name="HOTEN" msprop:Generator_ColumnPropNameInRow="HOTEN" msprop:Generator_ColumnPropNameInTable="HOTENColumn" msprop:Generator_ColumnVarNameInTable="columnHOTEN" msprop:Generator_UserColumnName="HOTEN" type="xs:string" minOccurs="0" />
+              <xs:element name="TENMH" msprop:Generator_ColumnPropNameInRow="TENMH" msprop:Generator_ColumnPropNameInTable="TENMHColumn" msprop:Generator_ColumnVarNameInTable="columnTENMH" msprop:Generator_UserColumnName="TENMH" type="xs:string" minOccurs="0" />
+              <xs:element name="DIEM_HM" msprop:Generator_ColumnPropNameInRow="DIEM_HM" msprop:Generator_ColumnPropNameInTable="DIEM_HMColumn" msprop:Generator_ColumnVarNameInTable="columnDIEM_HM" msprop:Generator_UserColumnName="DIEM_HM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

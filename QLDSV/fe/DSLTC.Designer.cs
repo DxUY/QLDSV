@@ -28,202 +28,357 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DSLTC));
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.exit_btn = new System.Windows.Forms.Button();
-            this.save_btn = new System.Windows.Forms.Button();
-            this.restore_btn = new System.Windows.Forms.Button();
-            this.modify_btn = new System.Windows.Forms.Button();
-            this.delete_btn = new System.Windows.Forms.Button();
-            this.add_btn = new System.Windows.Forms.Button();
+            this.buttons = new System.Windows.Forms.Panel();
+            this.search_main = new System.Windows.Forms.TextBox();
+            this.editLTC = new System.Windows.Forms.Button();
+            this.exitLTC = new System.Windows.Forms.Button();
+            this.saveLTC = new System.Windows.Forms.Button();
+            this.resLTC = new System.Windows.Forms.Button();
+            this.deleteLTC = new System.Windows.Forms.Button();
+            this.addLTC = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dataLTC = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.lOPTINCHIBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLDSVDataSet = new QLDSV.QLDSVDataSet();
+            this.khoaComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Cancel = new System.Windows.Forms.CheckBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.semesterInput = new System.Windows.Forms.NumericUpDown();
+            this.cancelClassCheck = new System.Windows.Forms.CheckBox();
+            this.groupInput = new System.Windows.Forms.NumericUpDown();
+            this.gvIdInput = new System.Windows.Forms.TextBox();
+            this.mhIdInput = new System.Windows.Forms.TextBox();
+            this.yearInput = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.gvComboBox = new System.Windows.Forms.ComboBox();
+            this.mhComboBox = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.minSVInput = new System.Windows.Forms.NumericUpDown();
+            this.khoaInput = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.lOPTINCHITableAdapter = new QLDSV.QLDSVDataSetTableAdapters.LOPTINCHITableAdapter();
+            this.tableAdapterManager = new QLDSV.QLDSVDataSetTableAdapters.TableAdapterManager();
+            this.buttons.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataLTC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOPTINCHIBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDSVDataSet)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.semesterInput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupInput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minSVInput)).BeginInit();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // buttons
             // 
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1257, 884);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.buttons.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.buttons.Controls.Add(this.search_main);
+            this.buttons.Controls.Add(this.editLTC);
+            this.buttons.Controls.Add(this.exitLTC);
+            this.buttons.Controls.Add(this.saveLTC);
+            this.buttons.Controls.Add(this.resLTC);
+            this.buttons.Controls.Add(this.deleteLTC);
+            this.buttons.Controls.Add(this.addLTC);
+            this.buttons.Location = new System.Drawing.Point(3, 3);
+            this.buttons.Name = "buttons";
+            this.buttons.Size = new System.Drawing.Size(1251, 66);
+            this.buttons.TabIndex = 4;
             // 
-            // panel1
+            // search_main
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.exit_btn);
-            this.panel1.Controls.Add(this.save_btn);
-            this.panel1.Controls.Add(this.restore_btn);
-            this.panel1.Controls.Add(this.modify_btn);
-            this.panel1.Controls.Add(this.delete_btn);
-            this.panel1.Controls.Add(this.add_btn);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1251, 66);
-            this.panel1.TabIndex = 2;
+            this.search_main.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.search_main.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.search_main.Location = new System.Drawing.Point(1008, 24);
+            this.search_main.Margin = new System.Windows.Forms.Padding(3, 2, 3, 50);
+            this.search_main.Name = "search_main";
+            this.search_main.Size = new System.Drawing.Size(238, 30);
+            this.search_main.TabIndex = 14;
+            this.search_main.Text = "search....";
+            this.search_main.TextChanged += new System.EventHandler(this.searchMain_TextChanged);
             // 
-            // exit_btn
+            // editLTC
             // 
-            this.exit_btn.BackColor = System.Drawing.Color.Indigo;
-            this.exit_btn.FlatAppearance.BorderSize = 0;
-            this.exit_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
-            this.exit_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
-            this.exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit_btn.ForeColor = System.Drawing.Color.White;
-            this.exit_btn.Image = ((System.Drawing.Image)(resources.GetObject("exit_btn.Image")));
-            this.exit_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exit_btn.Location = new System.Drawing.Point(709, 8);
-            this.exit_btn.Name = "exit_btn";
-            this.exit_btn.Size = new System.Drawing.Size(86, 46);
-            this.exit_btn.TabIndex = 6;
-            this.exit_btn.Text = "Thoát";
-            this.exit_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.exit_btn.UseVisualStyleBackColor = false;
+            this.editLTC.AutoSize = true;
+            this.editLTC.BackColor = System.Drawing.Color.Indigo;
+            this.editLTC.FlatAppearance.BorderSize = 0;
+            this.editLTC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
+            this.editLTC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
+            this.editLTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editLTC.ForeColor = System.Drawing.Color.White;
+            this.editLTC.Image = ((System.Drawing.Image)(resources.GetObject("editLTC.Image")));
+            this.editLTC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.editLTC.Location = new System.Drawing.Point(154, 8);
+            this.editLTC.Margin = new System.Windows.Forms.Padding(3, 2, 50, 2);
+            this.editLTC.Name = "editLTC";
+            this.editLTC.Size = new System.Drawing.Size(84, 46);
+            this.editLTC.TabIndex = 9;
+            this.editLTC.Text = "Sửa";
+            this.editLTC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.editLTC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.editLTC.UseVisualStyleBackColor = false;
+            this.editLTC.Click += new System.EventHandler(this.editLTC_Click);
             // 
-            // save_btn
+            // exitLTC
             // 
-            this.save_btn.BackColor = System.Drawing.Color.Indigo;
-            this.save_btn.FlatAppearance.BorderSize = 0;
-            this.save_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
-            this.save_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
-            this.save_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.save_btn.ForeColor = System.Drawing.Color.White;
-            this.save_btn.Image = ((System.Drawing.Image)(resources.GetObject("save_btn.Image")));
-            this.save_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.save_btn.Location = new System.Drawing.Point(576, 8);
-            this.save_btn.Name = "save_btn";
-            this.save_btn.Size = new System.Drawing.Size(75, 46);
-            this.save_btn.TabIndex = 5;
-            this.save_btn.Text = "Ghi";
-            this.save_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.save_btn.UseVisualStyleBackColor = false;
+            this.exitLTC.AutoSize = true;
+            this.exitLTC.BackColor = System.Drawing.Color.Indigo;
+            this.exitLTC.FlatAppearance.BorderSize = 0;
+            this.exitLTC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
+            this.exitLTC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
+            this.exitLTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitLTC.ForeColor = System.Drawing.Color.White;
+            this.exitLTC.Image = ((System.Drawing.Image)(resources.GetObject("exitLTC.Image")));
+            this.exitLTC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exitLTC.Location = new System.Drawing.Point(703, 8);
+            this.exitLTC.Name = "exitLTC";
+            this.exitLTC.Size = new System.Drawing.Size(86, 46);
+            this.exitLTC.TabIndex = 6;
+            this.exitLTC.Text = "Thoát";
+            this.exitLTC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.exitLTC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.exitLTC.UseVisualStyleBackColor = false;
+            this.exitLTC.Click += new System.EventHandler(this.exitLTC_Click);
             // 
-            // restore_btn
+            // saveLTC
             // 
-            this.restore_btn.BackColor = System.Drawing.Color.Indigo;
-            this.restore_btn.FlatAppearance.BorderSize = 0;
-            this.restore_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
-            this.restore_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
-            this.restore_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.restore_btn.ForeColor = System.Drawing.Color.White;
-            this.restore_btn.Image = ((System.Drawing.Image)(resources.GetObject("restore_btn.Image")));
-            this.restore_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.restore_btn.Location = new System.Drawing.Point(415, 8);
-            this.restore_btn.Name = "restore_btn";
-            this.restore_btn.Size = new System.Drawing.Size(102, 46);
-            this.restore_btn.TabIndex = 3;
-            this.restore_btn.Text = "Phục hồi";
-            this.restore_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.restore_btn.UseVisualStyleBackColor = false;
+            this.saveLTC.AutoSize = true;
+            this.saveLTC.BackColor = System.Drawing.Color.Indigo;
+            this.saveLTC.FlatAppearance.BorderSize = 0;
+            this.saveLTC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
+            this.saveLTC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
+            this.saveLTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveLTC.ForeColor = System.Drawing.Color.White;
+            this.saveLTC.Image = ((System.Drawing.Image)(resources.GetObject("saveLTC.Image")));
+            this.saveLTC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.saveLTC.Location = new System.Drawing.Point(575, 8);
+            this.saveLTC.Margin = new System.Windows.Forms.Padding(3, 3, 50, 3);
+            this.saveLTC.Name = "saveLTC";
+            this.saveLTC.Size = new System.Drawing.Size(75, 46);
+            this.saveLTC.TabIndex = 5;
+            this.saveLTC.Text = "Ghi";
+            this.saveLTC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.saveLTC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.saveLTC.UseVisualStyleBackColor = false;
+            this.saveLTC.Click += new System.EventHandler(this.saveLTC_Click);
             // 
-            // modify_btn
+            // resLTC
             // 
-            this.modify_btn.BackColor = System.Drawing.Color.Indigo;
-            this.modify_btn.FlatAppearance.BorderSize = 0;
-            this.modify_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
-            this.modify_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
-            this.modify_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.modify_btn.ForeColor = System.Drawing.Color.White;
-            this.modify_btn.Image = ((System.Drawing.Image)(resources.GetObject("modify_btn.Image")));
-            this.modify_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.modify_btn.Location = new System.Drawing.Point(282, 8);
-            this.modify_btn.Name = "modify_btn";
-            this.modify_btn.Size = new System.Drawing.Size(75, 46);
-            this.modify_btn.TabIndex = 2;
-            this.modify_btn.Text = "Sửa";
-            this.modify_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.modify_btn.UseVisualStyleBackColor = false;
+            this.resLTC.AutoSize = true;
+            this.resLTC.BackColor = System.Drawing.Color.Indigo;
+            this.resLTC.FlatAppearance.BorderSize = 0;
+            this.resLTC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
+            this.resLTC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
+            this.resLTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.resLTC.ForeColor = System.Drawing.Color.White;
+            this.resLTC.Image = ((System.Drawing.Image)(resources.GetObject("resLTC.Image")));
+            this.resLTC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resLTC.Location = new System.Drawing.Point(420, 8);
+            this.resLTC.Margin = new System.Windows.Forms.Padding(3, 3, 50, 3);
+            this.resLTC.Name = "resLTC";
+            this.resLTC.Size = new System.Drawing.Size(102, 46);
+            this.resLTC.TabIndex = 3;
+            this.resLTC.Text = "Phục hồi";
+            this.resLTC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.resLTC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.resLTC.UseVisualStyleBackColor = false;
+            this.resLTC.Click += new System.EventHandler(this.resLTC_Click);
             // 
-            // delete_btn
+            // deleteLTC
             // 
-            this.delete_btn.BackColor = System.Drawing.Color.Indigo;
-            this.delete_btn.FlatAppearance.BorderSize = 0;
-            this.delete_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
-            this.delete_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
-            this.delete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delete_btn.ForeColor = System.Drawing.Color.White;
-            this.delete_btn.Image = ((System.Drawing.Image)(resources.GetObject("delete_btn.Image")));
-            this.delete_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.delete_btn.Location = new System.Drawing.Point(148, 8);
-            this.delete_btn.Name = "delete_btn";
-            this.delete_btn.Size = new System.Drawing.Size(76, 46);
-            this.delete_btn.TabIndex = 1;
-            this.delete_btn.Text = "Xóa";
-            this.delete_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.delete_btn.UseVisualStyleBackColor = false;
+            this.deleteLTC.AutoSize = true;
+            this.deleteLTC.BackColor = System.Drawing.Color.Indigo;
+            this.deleteLTC.FlatAppearance.BorderSize = 0;
+            this.deleteLTC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
+            this.deleteLTC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
+            this.deleteLTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteLTC.ForeColor = System.Drawing.Color.White;
+            this.deleteLTC.Image = ((System.Drawing.Image)(resources.GetObject("deleteLTC.Image")));
+            this.deleteLTC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.deleteLTC.Location = new System.Drawing.Point(291, 8);
+            this.deleteLTC.Margin = new System.Windows.Forms.Padding(3, 3, 50, 3);
+            this.deleteLTC.Name = "deleteLTC";
+            this.deleteLTC.Size = new System.Drawing.Size(76, 46);
+            this.deleteLTC.TabIndex = 1;
+            this.deleteLTC.Text = "Xóa";
+            this.deleteLTC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.deleteLTC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.deleteLTC.UseVisualStyleBackColor = false;
+            this.deleteLTC.Click += new System.EventHandler(this.deleteLTC_Click);
             // 
-            // add_btn
+            // addLTC
             // 
-            this.add_btn.BackColor = System.Drawing.Color.Indigo;
-            this.add_btn.FlatAppearance.BorderSize = 0;
-            this.add_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
-            this.add_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
-            this.add_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.add_btn.ForeColor = System.Drawing.Color.White;
-            this.add_btn.Image = ((System.Drawing.Image)(resources.GetObject("add_btn.Image")));
-            this.add_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.add_btn.Location = new System.Drawing.Point(17, 8);
-            this.add_btn.Name = "add_btn";
-            this.add_btn.Size = new System.Drawing.Size(83, 46);
-            this.add_btn.TabIndex = 0;
-            this.add_btn.Text = "Thêm";
-            this.add_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.add_btn.UseVisualStyleBackColor = false;
+            this.addLTC.AutoSize = true;
+            this.addLTC.BackColor = System.Drawing.Color.Indigo;
+            this.addLTC.FlatAppearance.BorderSize = 0;
+            this.addLTC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.BlueViolet;
+            this.addLTC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
+            this.addLTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addLTC.ForeColor = System.Drawing.Color.White;
+            this.addLTC.Image = ((System.Drawing.Image)(resources.GetObject("addLTC.Image")));
+            this.addLTC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addLTC.Location = new System.Drawing.Point(17, 8);
+            this.addLTC.Margin = new System.Windows.Forms.Padding(3, 3, 50, 3);
+            this.addLTC.Name = "addLTC";
+            this.addLTC.Size = new System.Drawing.Size(84, 46);
+            this.addLTC.TabIndex = 0;
+            this.addLTC.Text = "Thêm";
+            this.addLTC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.addLTC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.addLTC.UseVisualStyleBackColor = false;
+            this.addLTC.Click += new System.EventHandler(this.addLTC_Click);
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.dataLTC);
+            this.panel2.Controls.Add(this.khoaComboBox);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Location = new System.Drawing.Point(3, 75);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1251, 463);
-            this.panel2.TabIndex = 3;
+            this.panel2.TabIndex = 8;
             // 
-            // comboBox1
+            // dataLTC
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(414, 10);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(380, 33);
-            this.comboBox1.TabIndex = 2;
+            this.dataLTC.AllowUserToAddRows = false;
+            this.dataLTC.AllowUserToDeleteRows = false;
+            this.dataLTC.AllowUserToResizeColumns = false;
+            this.dataLTC.AllowUserToResizeRows = false;
+            this.dataLTC.AutoGenerateColumns = false;
+            this.dataLTC.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataLTC.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataLTC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataLTC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewCheckBoxColumn1});
+            this.dataLTC.DataSource = this.lOPTINCHIBindingSource;
+            this.dataLTC.Location = new System.Drawing.Point(3, 49);
+            this.dataLTC.Name = "dataLTC";
+            this.dataLTC.ReadOnly = true;
+            this.dataLTC.RowHeadersWidth = 51;
+            this.dataLTC.RowTemplate.Height = 24;
+            this.dataLTC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataLTC.Size = new System.Drawing.Size(1243, 409);
+            this.dataLTC.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "MALTC";
+            this.dataGridViewTextBoxColumn1.HeaderText = "MALTC";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "NIENKHOA";
+            this.dataGridViewTextBoxColumn2.HeaderText = "NIENKHOA";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "HOCKY";
+            this.dataGridViewTextBoxColumn3.HeaderText = "HOCKY";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "MAMH";
+            this.dataGridViewTextBoxColumn4.HeaderText = "MAMH";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "NHOM";
+            this.dataGridViewTextBoxColumn5.HeaderText = "NHOM";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "MAGV";
+            this.dataGridViewTextBoxColumn6.HeaderText = "MAGV";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "MAKHOA";
+            this.dataGridViewTextBoxColumn7.HeaderText = "MAKHOA";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "SOSVTOITHIEU";
+            this.dataGridViewTextBoxColumn8.HeaderText = "SOSVTOITHIEU";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "HUYLOP";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "HUYLOP";
+            this.dataGridViewCheckBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
+            // 
+            // lOPTINCHIBindingSource
+            // 
+            this.lOPTINCHIBindingSource.DataMember = "LOPTINCHI";
+            this.lOPTINCHIBindingSource.DataSource = this.qLDSVDataSet;
+            // 
+            // qLDSVDataSet
+            // 
+            this.qLDSVDataSet.DataSetName = "QLDSVDataSet";
+            this.qLDSVDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // khoaComboBox
+            // 
+            this.khoaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.khoaComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.khoaComboBox.FormattingEnabled = true;
+            this.khoaComboBox.Location = new System.Drawing.Point(414, 10);
+            this.khoaComboBox.Name = "khoaComboBox";
+            this.khoaComboBox.Size = new System.Drawing.Size(380, 33);
+            this.khoaComboBox.TabIndex = 2;
+            this.khoaComboBox.SelectedIndexChanged += new System.EventHandler(this.khoaComboBox_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -235,35 +390,25 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "KHOA";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 58);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1222, 385);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.Cancel);
-            this.panel3.Controls.Add(this.numericUpDown2);
-            this.panel3.Controls.Add(this.textBox5);
-            this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.semesterInput);
+            this.panel3.Controls.Add(this.cancelClassCheck);
+            this.panel3.Controls.Add(this.groupInput);
+            this.panel3.Controls.Add(this.gvIdInput);
+            this.panel3.Controls.Add(this.mhIdInput);
+            this.panel3.Controls.Add(this.yearInput);
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.comboBox3);
-            this.panel3.Controls.Add(this.comboBox2);
+            this.panel3.Controls.Add(this.gvComboBox);
+            this.panel3.Controls.Add(this.mhComboBox);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.numericUpDown1);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.minSVInput);
+            this.panel3.Controls.Add(this.khoaInput);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label2);
@@ -272,49 +417,88 @@
             this.panel3.Location = new System.Drawing.Point(3, 544);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1251, 337);
-            this.panel3.TabIndex = 4;
+            this.panel3.TabIndex = 6;
             // 
-            // Cancel
+            // semesterInput
             // 
-            this.Cancel.AutoSize = true;
-            this.Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Cancel.Location = new System.Drawing.Point(771, 294);
-            this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(18, 17);
-            this.Cancel.TabIndex = 24;
-            this.Cancel.UseVisualStyleBackColor = true;
+            this.semesterInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.semesterInput.Location = new System.Drawing.Point(256, 118);
+            this.semesterInput.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.semesterInput.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.semesterInput.Name = "semesterInput";
+            this.semesterInput.ReadOnly = true;
+            this.semesterInput.Size = new System.Drawing.Size(283, 30);
+            this.semesterInput.TabIndex = 25;
+            this.semesterInput.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
-            // numericUpDown2
+            // cancelClassCheck
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.numericUpDown2.Location = new System.Drawing.Point(823, 120);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(283, 30);
-            this.numericUpDown2.TabIndex = 23;
+            this.cancelClassCheck.AutoSize = true;
+            this.cancelClassCheck.Enabled = false;
+            this.cancelClassCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cancelClassCheck.Location = new System.Drawing.Point(823, 294);
+            this.cancelClassCheck.Name = "cancelClassCheck";
+            this.cancelClassCheck.Size = new System.Drawing.Size(18, 17);
+            this.cancelClassCheck.TabIndex = 24;
+            this.cancelClassCheck.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // groupInput
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox5.Location = new System.Drawing.Point(823, 233);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(283, 30);
-            this.textBox5.TabIndex = 22;
+            this.groupInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.groupInput.Location = new System.Drawing.Point(823, 120);
+            this.groupInput.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.groupInput.Name = "groupInput";
+            this.groupInput.ReadOnly = true;
+            this.groupInput.Size = new System.Drawing.Size(283, 30);
+            this.groupInput.TabIndex = 23;
+            this.groupInput.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
-            // textBox4
+            // gvIdInput
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox4.Location = new System.Drawing.Point(823, 174);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(283, 30);
-            this.textBox4.TabIndex = 21;
+            this.gvIdInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.gvIdInput.Location = new System.Drawing.Point(823, 225);
+            this.gvIdInput.Name = "gvIdInput";
+            this.gvIdInput.ReadOnly = true;
+            this.gvIdInput.Size = new System.Drawing.Size(283, 30);
+            this.gvIdInput.TabIndex = 22;
             // 
-            // textBox3
+            // mhIdInput
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox3.Location = new System.Drawing.Point(823, 72);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(283, 30);
-            this.textBox3.TabIndex = 20;
+            this.mhIdInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.mhIdInput.Location = new System.Drawing.Point(823, 169);
+            this.mhIdInput.Name = "mhIdInput";
+            this.mhIdInput.ReadOnly = true;
+            this.mhIdInput.Size = new System.Drawing.Size(283, 30);
+            this.mhIdInput.TabIndex = 21;
+            // 
+            // yearInput
+            // 
+            this.yearInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.yearInput.Location = new System.Drawing.Point(823, 66);
+            this.yearInput.Name = "yearInput";
+            this.yearInput.ReadOnly = true;
+            this.yearInput.Size = new System.Drawing.Size(283, 30);
+            this.yearInput.TabIndex = 20;
             // 
             // label12
             // 
@@ -366,23 +550,27 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Niên khóa";
             // 
-            // comboBox3
+            // gvComboBox
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(256, 230);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(283, 33);
-            this.comboBox3.TabIndex = 14;
+            this.gvComboBox.Enabled = false;
+            this.gvComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.gvComboBox.FormattingEnabled = true;
+            this.gvComboBox.Location = new System.Drawing.Point(256, 230);
+            this.gvComboBox.Name = "gvComboBox";
+            this.gvComboBox.Size = new System.Drawing.Size(283, 33);
+            this.gvComboBox.TabIndex = 14;
+            this.gvComboBox.SelectedIndexChanged += new System.EventHandler(this.gvComboBox_SelectedIndexChanged);
             // 
-            // comboBox2
+            // mhComboBox
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(256, 171);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(283, 33);
-            this.comboBox2.TabIndex = 13;
+            this.mhComboBox.Enabled = false;
+            this.mhComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.mhComboBox.FormattingEnabled = true;
+            this.mhComboBox.Location = new System.Drawing.Point(256, 171);
+            this.mhComboBox.Name = "mhComboBox";
+            this.mhComboBox.Size = new System.Drawing.Size(283, 33);
+            this.mhComboBox.TabIndex = 13;
+            this.mhComboBox.SelectedIndexChanged += new System.EventHandler(this.mhComboBox_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -394,29 +582,34 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Số sv tối thiểu";
             // 
-            // numericUpDown1
+            // minSVInput
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.numericUpDown1.Location = new System.Drawing.Point(256, 287);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(283, 30);
-            this.numericUpDown1.TabIndex = 10;
+            this.minSVInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.minSVInput.Location = new System.Drawing.Point(256, 287);
+            this.minSVInput.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.minSVInput.Name = "minSVInput";
+            this.minSVInput.ReadOnly = true;
+            this.minSVInput.Size = new System.Drawing.Size(283, 30);
+            this.minSVInput.TabIndex = 10;
+            this.minSVInput.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
-            // textBox2
+            // khoaInput
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox2.Location = new System.Drawing.Point(256, 117);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(283, 30);
-            this.textBox2.TabIndex = 9;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox1.Location = new System.Drawing.Point(256, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(283, 30);
-            this.textBox1.TabIndex = 8;
+            this.khoaInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.khoaInput.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.khoaInput.Location = new System.Drawing.Point(256, 64);
+            this.khoaInput.Name = "khoaInput";
+            this.khoaInput.ReadOnly = true;
+            this.khoaInput.Size = new System.Drawing.Size(283, 30);
+            this.khoaInput.TabIndex = 8;
             // 
             // label5
             // 
@@ -468,61 +661,97 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Thông tin lớp tín chỉ";
             // 
+            // lOPTINCHITableAdapter
+            // 
+            this.lOPTINCHITableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.DANGKYTableAdapter = null;
+            this.tableAdapterManager.GIANGVIENTableAdapter = null;
+            this.tableAdapterManager.KhoaTableAdapter = null;
+            this.tableAdapterManager.LopTableAdapter = null;
+            this.tableAdapterManager.LOPTINCHITableAdapter = this.lOPTINCHITableAdapter;
+            this.tableAdapterManager.MonHocTableAdapter = null;
+            this.tableAdapterManager.SinhVienTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = QLDSV.QLDSVDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // DSLTC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.AutoSize = true;
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.buttons);
             this.Name = "DSLTC";
             this.Size = new System.Drawing.Size(1257, 884);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.DSLTC_Load);
+            this.buttons.ResumeLayout(false);
+            this.buttons.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataLTC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOPTINCHIBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDSVDataSet)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.semesterInput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupInput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minSVInput)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button exit_btn;
-        private System.Windows.Forms.Button save_btn;
-        private System.Windows.Forms.Button restore_btn;
-        private System.Windows.Forms.Button modify_btn;
-        private System.Windows.Forms.Button delete_btn;
-        private System.Windows.Forms.Button add_btn;
+        private System.Windows.Forms.Panel buttons;
+        private System.Windows.Forms.Button exitLTC;
+        private System.Windows.Forms.Button saveLTC;
+        private System.Windows.Forms.Button resLTC;
+        private System.Windows.Forms.Button deleteLTC;
+        private System.Windows.Forms.Button addLTC;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox khoaComboBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox cancelClassCheck;
+        private System.Windows.Forms.NumericUpDown groupInput;
+        private System.Windows.Forms.TextBox gvIdInput;
+        private System.Windows.Forms.TextBox mhIdInput;
+        private System.Windows.Forms.TextBox yearInput;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.CheckBox Cancel;
+        private System.Windows.Forms.ComboBox gvComboBox;
+        private System.Windows.Forms.ComboBox mhComboBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.NumericUpDown minSVInput;
+        private System.Windows.Forms.TextBox khoaInput;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private QLDSVDataSet qLDSVDataSet;
+        private System.Windows.Forms.BindingSource lOPTINCHIBindingSource;
+        private QLDSVDataSetTableAdapters.LOPTINCHITableAdapter lOPTINCHITableAdapter;
+        private QLDSVDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridView dataLTC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.NumericUpDown semesterInput;
+        private System.Windows.Forms.Button editLTC;
+        private System.Windows.Forms.TextBox search_main;
     }
 }

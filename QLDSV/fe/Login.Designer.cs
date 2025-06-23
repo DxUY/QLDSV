@@ -79,7 +79,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(229, 109);
+            this.label2.Location = new System.Drawing.Point(229, 121);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 25);
             this.label2.TabIndex = 2;
@@ -89,7 +89,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(233, 205);
+            this.label3.Location = new System.Drawing.Point(229, 214);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 25);
             this.label3.TabIndex = 3;
@@ -136,19 +136,19 @@
             // 
             // login_username
             // 
-            this.login_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.login_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.login_username.Location = new System.Drawing.Point(234, 149);
             this.login_username.Name = "login_username";
-            this.login_username.Size = new System.Drawing.Size(468, 38);
+            this.login_username.Size = new System.Drawing.Size(468, 30);
             this.login_username.TabIndex = 8;
             // 
             // login_password
             // 
-            this.login_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.login_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.login_password.Location = new System.Drawing.Point(234, 245);
             this.login_password.Name = "login_password";
             this.login_password.PasswordChar = '*';
-            this.login_password.Size = new System.Drawing.Size(468, 38);
+            this.login_password.Size = new System.Drawing.Size(468, 30);
             this.login_password.TabIndex = 9;
             // 
             // showPass

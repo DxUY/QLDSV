@@ -14,3 +14,177 @@ C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.fe.DML.resources
 C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.fe.DSMH.resources
 C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.fe.DSLTC.resources
 C:\Users\Minh Duy\source\repos\QLDSV\obj\Debug\QLDSV.fe.ND.resources
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\bin\Debug\QLDSV.exe.config
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\bin\Debug\QLDSV.exe
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\bin\Debug\QLDSV.pdb
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.csproj.AssemblyReference.cache
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.fe.DSLTC.resources
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.fe.DSMH.resources
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.fe.GiangVien.resources
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.fe.Login.resources
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.fe.ND.resources
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.fe.SinhVien.resources
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.fe.DML.resources
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.Properties.Resources.resources
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.csproj.GenerateResource.cache
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.csproj.CoreCompileInputs.cache
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.exe
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.pdb
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\phuct\Source\Repos\QLDSV\QLDSV\obj\Debug\QLDSV.csproj.Up2Date
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.csproj.AssemblyReference.cache
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.fe.DSLTC.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.fe.DSMH.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.fe.GiangVien.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.fe.Login.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.fe.ND.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.fe.SinhVien.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.fe.DML.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.Properties.Resources.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.csproj.GenerateResource.cache
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.csproj.CoreCompileInputs.cache
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.exe
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.pdb
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\bin\Debug\QLDSV.exe.config
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\bin\Debug\QLDSV.exe
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\bin\Debug\QLDSV.pdb
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\QLDSV\obj\Debug\QLDSV.csproj.Up2Date
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.csproj.AssemblyReference.cache
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.fe.DSLTC.resources
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.fe.DSMH.resources
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.fe.GiangVien.resources
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.fe.Login.resources
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.fe.ND.resources
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.fe.SinhVien.resources
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.fe.DML.resources
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.Fe.TaoTK.resources
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.Properties.Resources.resources
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.csproj.GenerateResource.cache
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.csproj.CoreCompileInputs.cache
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.exe
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.pdb
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\bin\Debug\QLDSV.exe.config
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\bin\Debug\QLDSV.exe
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\bin\Debug\QLDSV.pdb
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\phuct\Documents\Zalo Received Files\QLDSV\obj\Debug\QLDSV.csproj.Up2Date
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\QLDSV.exe.config
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\QLDSV.exe
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\QLDSV.pdb
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.csproj.AssemblyReference.cache
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.fe.DSLTC.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.fe.DSMH.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.fe.GiangVien.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.fe.Login.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.fe.ND.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.fe.SinhVien.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.fe.DML.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.TaoTK.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Properties.Resources.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.csproj.GenerateResource.cache
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.csproj.CoreCompileInputs.cache
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.csproj.Up2Date
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.exe
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.pdb
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.DKLTC.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.XD.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.Core.WinForms.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.Data.WinForms.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.DataSource.WinForms.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.GridCommon.WinForms.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.SfDataGrid.WinForms.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.SfInput.WinForms.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.SfListView.WinForms.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.Shared.Base.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.Core.WinForms.xml
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.Data.WinForms.xml
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.DataSource.WinForms.xml
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.GridCommon.WinForms.xml
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.SfDataGrid.WinForms.xml
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.SfInput.WinForms.xml
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.SfListView.WinForms.xml
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Syncfusion.Shared.Base.xml
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.Search.sSVDK.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.Search.sBDLTC.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.Search.sBDTK.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.Search.sDSLTC.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.Search.sPD.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.Backup.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\EnvDTE.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\stdole.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.Reports.DSLTC.DSLTCReport.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.Reports.SVDK.SVDKReport.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.Reports.BDLTC.BDLTCReport.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.Reports.BDTK.BDTKReport.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.Fe.Reports.PD.PDReport.resources
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Fe\Reports\DSLTC\DSLTC.rdlc
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Fe\Reports\BDLTC\BDLTC.rdlc
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Fe\Reports\BDTK\BDTK.rdlc
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Fe\Reports\PD\PD.rdlc
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\Fe\Reports\SVDK\SVDK.rdlc
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\obj\Debug\QLDSV.exe.config
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\x86\SqlServerSpatial160.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\x64\SqlServerSpatial160.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Minh Duy\OneDrive\Máy tính\QLDSV\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll

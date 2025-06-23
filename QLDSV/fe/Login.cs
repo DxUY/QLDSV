@@ -1,12 +1,7 @@
-﻿using System;
+﻿using QLDSV.Be;
+using QLDSV.Be.Utils;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QLDSV.fe
@@ -14,7 +9,7 @@ namespace QLDSV.fe
     public partial class Login : Form
     {
         private int type; // 0 = SV, 1 = GV
-
+        
         public Login()
         {
             InitializeComponent();
@@ -22,101 +17,95 @@ namespace QLDSV.fe
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            if (login_username.Text == "" || (type == 0 && login_password.Text == ""))
+            var loginData = new Dictionary<string, string>
             {
-                MessageBox.Show("Please fill all fields", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+                { "USERNAME", login_username.Text },
+                { "PASSWORD", login_password.Text }
+            };
 
-            string username = login_username.Text.Trim();
-            string password = login_password.Text.Trim();
+            if (!Validation.IsInputComplete(loginData)) return;
 
-            if (DataHelper.Connect(login_username.Text.Trim(), login_password.Text.Trim()) == 1)
+            string username = loginData["USERNAME"];
+            string password = loginData["PASSWORD"];
+
+            if (type == 0) // SinhVien login
             {
-                string table = (type == 0) ? "SinhVien" : "GIANGVIEN";
-                string idField = (type == 0) ? "MASV" : "MAGV";
-
-                string query = $"SELECT * FROM {table} WHERE {idField} = @username";
-
-                using (SqlCommand cmd = new SqlCommand(query, DataHelper.conn))
+                try
                 {
-                    cmd.Parameters.AddWithValue("@username", username);
+                    bool loginSuccess = DbHandler.LoginSV(username, password);
 
-                    try
+                    if (loginSuccess)
                     {
-                        using (SqlDataReader reader = cmd.ExecuteReader())
-                        {
-                            if (reader.HasRows)
-                            {
-                                reader.Read();
-                                reader.Close();
-                                this.Hide();
+                        var info = DbHandler.GetColumnValues("SinhVien", new[] { "HO", "TEN" }, "MASV", username, true);
+                        string fullName = $"{info["HO"]} {info["TEN"]}";
 
-                                if (type == 0)
-                                {
-                                    SinhVien formSV = new SinhVien();
-                                    formSV.FormClosed += (s, args) => this.Close();
-                                    formSV.Show();
-                                }
-                                else
-                                {
-                                    GiangVien formGV = new GiangVien();
-                                    formGV.FormClosed += (s, args) => this.Close();
-                                    formGV.Show();
-                                }
-                            }
-                            else
-                            {
-                                MessageBox.Show("Invalid username or role.", "Login Failed",
-                                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            }
-                        }
+                        this.Hide();
+                        SinhVien formSV = new SinhVien(username, fullName);
+                        formSV.FormClosed += (s, args) => this.Close();
+                        formSV.Show();
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        MessageBox.Show("Error: " + ex.Message);
+                        MessageBox.Show("Sai mã sinh viên hoặc mật khẩu.", "Đăng nhập thất bại",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi đăng nhập sinh viên: {ex.Message}", "Lỗi",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Cannot connect to DB. Check server or credentials.",
-                    "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (DataHelper.Connect(username, password) == 1)
+                {
+                    try
+                    {
+                        var info = DbHandler.GetColumnValues("GIANGVIEN", new[] { "HO", "TEN", "MAKHOA" }, "MAGV", username, true);
+                        string fullName = $"{info["HO"]} {info["TEN"]}";
+                        string khoa = info["MAKHOA"].ToString();
+                        string role = DbHandler.GetUserRole(username);
+
+                        this.Hide();
+                        GiangVien formGV = new GiangVien(username, fullName, role, khoa);
+                        formGV.FormClosed += (s, args) => this.Close();
+                        formGV.Show();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Lỗi khi lấy thông tin giảng viên: {ex.Message}", "Lỗi đăng nhập",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Sai tài khoản SQL Server hoặc mật khẩu.", "Đăng nhập thất bại",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
         private void gv_CheckedChanged(object sender, EventArgs e)
         {
             type = 1;
-            label3.Visible = true;
-            login_password.Visible = true;
-            showPass.Visible = true;
+            label2.Text = "Login";
         }
 
         private void sv_CheckedChanged(object sender, EventArgs e)
         {
             type = 0;
-            label3.Visible = true;
-            login_password.Visible = true;
-            showPass.Visible = true;
+            label2.Text = "MaSV";
         }
-
 
         private void exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void showPass_CheckedChanged(object sender, EventArgs e)
         {
             login_password.PasswordChar = showPass.Checked ? '\0' : '*';
         }
-
     }
 }
